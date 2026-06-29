@@ -16,6 +16,7 @@
         body{
             background: linear-gradient(135deg,#0f172a,#1e3a8a);
             color:white;
+            min-height:100vh;
         }
 
         .container{
@@ -32,6 +33,12 @@
             border:5px solid white;
             object-fit:cover;
             margin-bottom:20px;
+            transition:0.3s;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .profile:hover{
+            transform:scale(1.05);
         }
 
         h1{
@@ -42,6 +49,7 @@
         h2{
             color:#93c5fd;
             margin-bottom:30px;
+            font-weight:400;
         }
 
         .about{
@@ -49,6 +57,8 @@
             margin:auto;
             line-height:1.8;
             margin-bottom:40px;
+            font-size:18px;
+            color:#e2e8f0;
         }
 
         .skills{
@@ -65,28 +75,61 @@
             color:#1e3a8a;
             border-radius:30px;
             font-weight:bold;
+            transition:0.3s;
+        }
+
+        .skill:hover{
+            transform:translateY(-5px);
+            box-shadow:0 8px 20px rgba(255,255,255,0.2);
+        }
+
+        .links{
+            margin-top:30px;
         }
 
         .links a{
             display:inline-block;
-            padding:15px 25px;
+            padding:15px 30px;
             margin:10px;
             background:#2563eb;
             color:white;
             text-decoration:none;
             border-radius:10px;
             transition:0.3s;
+            font-weight:bold;
         }
 
         .links a:hover{
             background:#3b82f6;
             transform:translateY(-3px);
+            box-shadow:0 8px 20px rgba(37,99,235,0.4);
         }
 
         footer{
-            margin-top:50px;
+            margin-top:60px;
             color:#cbd5e1;
+            font-size:14px;
         }
+
+        @media(max-width:768px){
+            h1{
+                font-size:36px;
+            }
+
+            h2{
+                font-size:24px;
+            }
+
+            .about{
+                font-size:16px;
+            }
+
+            .profile{
+                width:150px;
+                height:150px;
+            }
+        }
+
     </style>
 </head>
 
@@ -94,7 +137,7 @@
 
 <div class="container">
 
-    <img src="profile.jpg" class="profile">
+    <img src="profile.jpg" class="profile" alt="Profile">
 
     <h1>ธนกฤษฎ์ เจิมขุนทด</h1>
     <h2>Software Developer</h2>
@@ -118,9 +161,18 @@
     </div>
 
     <div class="links">
-        <a href="#">GitHub</a>
-        <a href="#">Email</a>
-        <a href="#">Resume PDF</a>
+
+        <a href="https://github.com/Thanakrit-J"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub
+        </a>
+
+        <a href="resume.pdf"
+           target="_blank">
+            Resume PDF
+        </a>
+
     </div>
 
     <footer>
