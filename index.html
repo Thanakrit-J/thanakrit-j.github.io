@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanakrit Jemjuntod - Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#0f172a,#1e3a8a);
+            color:white;
+        }
+
+        .container{
+            max-width:1000px;
+            margin:auto;
+            padding:50px 20px;
+            text-align:center;
+        }
+
+        .profile{
+            width:180px;
+            height:180px;
+            border-radius:50%;
+            border:5px solid white;
+            object-fit:cover;
+            margin-bottom:20px;
+        }
+
+        h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+
+        h2{
+            color:#93c5fd;
+            margin-bottom:30px;
+        }
+
+        .about{
+            max-width:700px;
+            margin:auto;
+            line-height:1.8;
+            margin-bottom:40px;
+        }
+
+        .skills{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:15px;
+            margin-bottom:40px;
+        }
+
+        .skill{
+            padding:12px 20px;
+            background:white;
+            color:#1e3a8a;
+            border-radius:30px;
+            font-weight:bold;
+        }
+
+        .links a{
+            display:inline-block;
+            padding:15px 25px;
+            margin:10px;
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .links a:hover{
+            background:#3b82f6;
+            transform:translateY(-3px);
+        }
+
+        footer{
+            margin-top:50px;
+            color:#cbd5e1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="profile.jpg" class="profile">
+
+    <h1>ธนกฤษฎ์ เจิมขุนทด</h1>
+    <h2>Software Developer</h2>
+
+    <div class="about">
+        นักพัฒนาซอฟต์แวร์ที่มีประสบการณ์ด้าน ERP,
+        Warehouse, HR และ Integration System
+        เชี่ยวชาญ SQL, C#, Angular และการออกแบบ Workflow
+        พร้อมทั้งสามารถวิเคราะห์ Requirement และพัฒนา Solution
+        ให้ตอบโจทย์ทางธุรกิจได้อย่างมีประสิทธิภาพ
+    </div>
+
+    <div class="skills">
+        <div class="skill">SQL</div>
+        <div class="skill">C#</div>
+        <div class="skill">Angular</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">ERP</div>
+        <div class="skill">Integration</div>
+        <div class="skill">API</div>
+    </div>
+
+    <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Email</a>
+        <a href="#">Resume PDF</a>
+    </div>
+
+    <footer>
+        © 2026 Thanakrit Jemjuntod
+    </footer>
+
+</div>
+
+</body>
+</html>
